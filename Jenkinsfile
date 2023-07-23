@@ -4,8 +4,8 @@ pipeline{
 stages{
     stage('git'){
         steps{
-            git branch: 'master',
-                url: 'https://github.com/jenkinsci/jenkins.git'              
+            git branch: 'declarative',
+                url: 'https://github.com/sridharkomati/jenkins.july24-spc.git'              
         }
     }    
     stage('build'){
