@@ -12,7 +12,8 @@ stages{
         steps{
             sh 'ls'
             sh 'pwd'
-            sh 'maven package' 
+            sh 'mvn --version'
+            sh 'mvn package' 
         }
     }    
     }
