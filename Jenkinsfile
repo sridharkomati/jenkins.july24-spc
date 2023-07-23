@@ -1,5 +1,10 @@
 pipeline{
-    agent{ label 'JDK-17'}
+    agent { label 'JDK-17'}
+    tools {
+        maven '3.9.3'
+        jdk   'JDK-17'
+    }
+       
     triggers { pollSCM('* * * * *')}
 stages{
     stage('git'){
