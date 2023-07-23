@@ -1,7 +1,7 @@
 pipeline{
     agent { label 'JDK-17'}
     tools {
-        maven '3.9.3'
+        maven 'maven 3.9.3'
         jdk   'JDK-17'
     }
        
